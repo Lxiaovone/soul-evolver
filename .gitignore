@@ -1,0 +1,22 @@
+# 运行时产物（不进仓库）
+persona_rules.json
+evolve_config.json
+se_state.json
+se_hits.log
+se_task.log
+se_review.log
+se_restart.log
+se_samples/
+archive/
+*.bak
+*.tmp
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 编辑器
+.vscode/
+.idea/

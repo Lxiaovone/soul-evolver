@@ -1,0 +1,35 @@
+{
+  "stage": "fast",
+  "trigger_time": "23:00",
+
+  "review": {
+    "source": "Mem_Data",
+    "min_turns": 6,
+    "max_input_chars": 9000,
+    "max_new_rules": 3,
+    "sample_keep_days": 7,
+    "log_candidates": ["bot.log", "bot_v5.log"]
+  },
+
+  "inject": {
+    "enabled": false,
+    "max_rules": 1,
+    "max_pairs": 2,
+    "max_chars": 220,
+    "header": "【像这样回话（照这个口气，别照抄原句）】"
+  },
+
+  "api": {
+    "base_url": "https://api.deepseek.com/v1",
+    "model": "deepseek-chat",
+    "timeout": 60,
+    "max_calls_per_day": 2,
+    "price_in_per_m": 2.0,
+    "price_out_per_m": 8.0
+  },
+
+  "rules": {
+    "max_total": 20,
+    "retire_fail_count": 3
+  }
+}
